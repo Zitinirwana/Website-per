@@ -1,0 +1,16 @@
+let count = 1;
+
+while (count <= 16) {
+    let suffix = "th";
+
+    if (count === 1) {
+        suffix = "st";
+    } else if (count === 2) {
+        suffix = "nd";
+    } else if (count === 3) {
+        suffix = "rd";
+    }
+
+    console.log("Pertemuan ke-" + count + " telah selesai");
+    count++;
+}

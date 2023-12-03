@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pop-up Box Example</title>
+</head>
+<body>
+
+<button onclick="showPrompt()">Show Prompt</button>
+<button onclick="showConfirm()">Show Confirm</button>
+
+<script>
+function showPrompt() {
+  var result = prompt("Masukkan NAMA:", "");
+  var result = prompt("Masukkan NIM:", "");
+  var result = prompt("Masukkan KELAS:", "");
+  if (result != null) {
+    alert("Halo, " + result + "!");
+  } else {
+    alert("Anda membatalkan prompt.");
+  }
+    function showConfirm() {
+    var result = confirm("Apakah Anda yakin ingin melanjutkan?");
+    if (result == true) {
+      alert("Anda memilih OK!");
+    } else {
+      alert("Anda memilih Cancel.");
+    }
+}
+}
+
+function showConfirm() {
+  var result = confirm("Apakah Anda yakin ingin melanjutkan?");
+  if (result == true) {
+    alert("Anda memilih OK!");
+  } else {
+    alert("Anda memilih Cancel.");
+  }
+}
+
+</script>
+
+</body>
+</html>
